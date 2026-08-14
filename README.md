@@ -2,6 +2,10 @@
 
 A web-based music player application that mimics Spotify's interface and core functionality. This project allows users to browse, play, and manage music from various playlists.
 
+
+### Screenshot:
+![Web-Image](image.png)
+
 ## ✨ Features
 
 - **Music Playback**: Play, pause, and control music playback

@@ -4,7 +4,7 @@ A web-based music player application that mimics Spotify's interface and core fu
 
 
 ### Screenshot:
-![Web-Image](image.png)
+![web-image](image-1.png)
 
 ## ✨ Features
 

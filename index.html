@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+</head>
+<body>
+
+
+    <div class="header">
+        <img class="logo pointer" src="img/logo.svg" alt="logo">
+        <div class="search">
+            <img class="homebtn pointer" src="img/home.svg" alt="homebtn" ">
+            <span class="searchBox">
+                <img class="sch" src="img/search.svg" alt=""  >
+            </span>
+        </div>
+
+
+        <div class="login">
+            <button class="signupbtn">Sign Up</button>
+            <button class="loginbtn">Log in</button>
+        </div>
+        
+    </div>
+
+
+
+    <div class="container">
+        <div class="left">
+            <div class="library">
+                <div class="heading">
+                    <img class="playlist" src="img/playlist.svg" alt="playlist">
+                    <h2>Your Library</h2>
+                </div>
+
+                <div class="libraryPlaylistName" id="libraryPlaylistName">
+                    <h1>Prime Bollywood</h1>
+                </div>
+
+                <div class="songList">
+                    <ul>
+                        <!-- <li>
+                            <img src="img/music.svg" alt="" style="filter: invert(1);">
+                            <div class="songinfo">
+                                <div>Song Name</div>
+                                <div>Song Artist</div>
+                            </div>
+                            <div class="playNow">
+                                <span>Play Now</span>
+                                <img src="img/play.svg" alt="" style="filter: invert(1);">
+                            </div>
+                        </li> -->
+
+                    </ul>
+                </div>
+
+
+
+
+                <div class="links">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>  
+
+
+        <div class="right">
+            <h1>Spotify Playlists</h1>
+            <div class="cardContainer">
+                <!-- <div data-folder="vibes" class="card">
+                    
+                    <img class="playgreen" src="img/playgreen.svg" alt="">
+                    <img class="img" src="songs/vibes/cover.jpg" alt="img1">
+                    <h2>Happy Hits!</h2>
+                    <p> Bright, sunny, catchy tunes put a smile on your face.</p>
+                </div> -->
+
+            </div>
+        </div>   
+    </div>
+
+
+
+    <div class="footer">
+        <div class="abovebar">
+
+           <div class="songInfo"></div>
+            <div class="playback">
+                <img src="img/shuffle.svg" alt="shuffle" class=" pointer shuffle">
+
+                <img class="pointer previous " src="img/backward.svg" alt="backward" >
+                <img class="pointer btn" src="img/play.svg" alt="play" >
+                <img class="pointer next" src="img/forward.svg" alt="forward" >
+                <img src="img/loop.svg" alt="loop" class=" pointer loop">
+            </div>
+            <div class="songtime"></div>
+        </div>
+
+        <div class="seekbar">
+            <div class="bar pointer">
+                <div class="progress"></div>
+                <div class="circle pointer"></div>
+            </div>
+        </div>
+        
+        <div class="volume">
+            <img class="vol pointer" src="img/volume.svg" alt="volume">
+            <div class="range">
+                <input class="pointer" type="range" name="volume" min="0" max="100" value="50">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

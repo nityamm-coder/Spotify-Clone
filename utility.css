@@ -1,0 +1,310 @@
+
+/* For Webkit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333; /* Dark color for the thumb */
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #222; /* Dark color for the track */
+  }
+
+  
+  /* For Firefox */
+  html {
+    scrollbar-color: #333 #222; /* Dark color for the thumb and track in Firefox */
+  }
+  
+
+  /* Firefox (thin + minimal) */
+body, .cardConatiner, .songList, .songList ul {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.15) transparent;
+}
+
+/* WebKit browsers (Chrome, Edge, Safari) */
+body::-webkit-scrollbar,
+.cardConatiner::-webkit-scrollbar,
+.songList ul::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body::-webkit-scrollbar-track,
+.cardConatiner::-webkit-scrollbar-track,
+.songList ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb,
+.cardConatiner::-webkit-scrollbar-thumb,
+.songList ul::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.14);
+  border-radius: 999px;
+  border: 0; /* no visible border */
+}
+
+/* Remove any scrollbar buttons */
+body::-webkit-scrollbar-button,
+.cardConatiner::-webkit-scrollbar-button,
+.songList ul::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+
+/* Hide scrollbar buttons (WebKit: Chrome, Edge, Safari) */
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-button:vertical:decrement,
+::-webkit-scrollbar-button:vertical:increment,
+::-webkit-scrollbar-button:horizontal:decrement,
+::-webkit-scrollbar-button:horizontal:increment {
+  display: none;
+  width: 0;
+  height: 0;
+  -webkit-appearance: none;
+}
+
+/* Also target the specific scrollable elements if needed */
+body::-webkit-scrollbar-button,
+.cardConatiner::-webkit-scrollbar-button,
+.songList ul::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+  -webkit-appearance: none;
+}
+
+/* Thin/minimal scrollbars for specific containers */
+.songList, .songList ul, .cardConatiner {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.14) transparent;
+}
+
+/* WebKit: size + transparent track + rounded thumb */
+.songList::-webkit-scrollbar,
+.songList ul::-webkit-scrollbar,
+.cardConatiner::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.songList::-webkit-scrollbar-track,
+.songList ul::-webkit-scrollbar-track,
+.cardConatiner::-webkit-scrollbar-track {
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+.songList::-webkit-scrollbar-thumb,
+.songList ul::-webkit-scrollbar-thumb,
+.cardConatiner::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.14);
+  border-radius: 999px;
+  -webkit-appearance: none;
+  border: 0;
+}
+
+/* Hide top/bottom (and left/right) scrollbar arrow buttons */
+.songList::-webkit-scrollbar-button:vertical:decrement,
+.songList::-webkit-scrollbar-button:vertical:increment,
+.songList ul::-webkit-scrollbar-button:vertical:decrement,
+.songList ul::-webkit-scrollbar-button:vertical:increment,
+.cardConatiner::-webkit-scrollbar-button:vertical:decrement,
+.cardConatiner::-webkit-scrollbar-button:vertical:increment {
+  display: none;
+  width: 0;
+  height: 0;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+/* Also remove corner */
+.songList::-webkit-scrollbar-corner,
+.songList ul::-webkit-scrollbar-corner,
+.cardConatiner::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Auto-hiding overlay scrollbar (WebKit: Chrome/Edge/Safari) */
+.songList, .cardConatiner {
+  overflow: auto;
+  position: relative;
+}
+
+/* Start hidden */
+.songList::-webkit-scrollbar,
+.cardConatiner::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  opacity: 0;
+  transition: opacity 240ms ease;
+  -webkit-transition: opacity 240ms ease;
+}
+
+/* transparent track so it doesn't show */
+.songList::-webkit-scrollbar-track,
+.cardConatiner::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* slim rounded thumb */
+.songList::-webkit-scrollbar-thumb,
+.cardConatiner::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.14);
+  border-radius: 999px;
+  border: 0;
+}
+
+/* reveal on hover/focus-within */
+.songList:hover::-webkit-scrollbar,
+.songList:focus-within::-webkit-scrollbar,
+.cardConatiner:hover::-webkit-scrollbar,
+.cardConatiner:focus-within::-webkit-scrollbar {
+  opacity: 1;
+}
+
+/* Also reveal when user drags/scrolls via a helper class (for JS approach) */
+.songList.show-scrollbar::-webkit-scrollbar,
+.cardConatiner.show-scrollbar::-webkit-scrollbar {
+  opacity: 1;
+}
+
+/* Firefox: thin scrollbar and color (can't fade with opacity) */
+.songList, .cardConatiner {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.14) transparent;
+}
+/* force-hide scrollbar buttons (WebKit) */
+html::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button,
+::-webkit-scrollbar-button,
+.songList::-webkit-scrollbar-button,
+.songList ul::-webkit-scrollbar-button,
+.cardConatiner::-webkit-scrollbar-button {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  -webkit-appearance: none !important;
+  background: transparent !important;
+}
+
+/* slim, auto-hiding thumb */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.songList::-webkit-scrollbar,
+.cardConatiner::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  transition: opacity 220ms;
+  opacity: 0; /* hidden by default */
+}
+.songList:hover::-webkit-scrollbar,
+.cardConatiner:hover::-webkit-scrollbar,
+html:hover::-webkit-scrollbar,
+body:hover::-webkit-scrollbar { opacity: 1; }
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+.songList::-webkit-scrollbar-track,
+.cardConatiner::-webkit-scrollbar-track { background: transparent; }
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+.songList::-webkit-scrollbar-thumb,
+.cardConatiner::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.12);
+  border-radius: 999px;
+  border: 0;
+}
+
+
+.volume input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 120px;
+  height: 5px;
+  margin: 7px 0px;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(
+    to right,
+    #1DB954 0%,
+    #1DB954 var(--range-percent, 50%),
+    #ffffff var(--range-percent, 50%),
+    #ffffff 100%
+  );
+}
+
+.volume input[type="range"]:focus {
+  outline: none;
+}
+
+.volume input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  background: transparent;
+  border-radius: 999px;
+}
+
+.volume input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgb(214, 213, 213);
+  border: none;
+  margin-top: -3px;
+  box-shadow: none;
+}
+
+.volume input[type="range"]::-moz-range-track {
+  height: 8px;
+  background: transparent;
+  border-radius: 999px;
+}
+
+.volume input[type="range"]::-moz-range-progress {
+  height: 8px;
+  background: #1DB954;
+  border-radius: 999px;
+}
+
+.volume input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgb(161, 34, 34);
+  border: none;
+}
+
+.volume input[type="range"]::-ms-track {
+  width: 100%;
+  height: 8px;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.volume input[type="range"]::-ms-fill-lower {
+  background: #1DB954;
+  border-radius: 999px;
+}
+
+.volume input[type="range"]::-ms-fill-upper {
+  background: white;
+  border-radius: 999px;
+}
+
+.volume input[type="range"]::-ms-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #1DB954;
+  border: none;
+}

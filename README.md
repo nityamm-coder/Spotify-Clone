@@ -118,12 +118,13 @@ Spotify_Clone/
 
 This project is open source and available under the MIT License.
 
-## 👤 Author
-
-Created as a Spotify clone project for web development practice.
 
 ## 🤝 Contributing
 
 Feel free to fork this project, make improvements, and submit pull requests!
 
-
+# **Coding Today! Engineering Tomorrow!** <br>
+Made By- Nityam Mishra <br>
+Email: nityamm2005@gmail.com <br>
+GitHub: [nityamm-coder](https://github.com/nityamm-coder)
+Linkedin: [nityam_mishra](https://www.linkedin.com/in/nityam2005/)
